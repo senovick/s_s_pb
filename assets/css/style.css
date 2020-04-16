@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#site-background {
+  background: url('../images/background.jpeg') fixed center 100%;
+}
+
+.row-equal > div[class*='col-'] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.row-equal .card {
+  position: relative;
+  width: 100%;
+}
+
+.row-equal .card:hover > .img-info {
+  display: block;
+  cursor: default;
+}
+
+.img-info {
+  position: absolute;
+  display: none;
+  color: #fff;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+.img-info .info {
+  position: relative;
+  -webkit-animation: moving 1s forwards;
+  animation: moving 1s forwards;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner > .row-equal.active,
+.carousel-inner > .row-equal.next,
+.carousel-inner > .row-equal.prev {
+  display: flex;
+}
+
+/* control image height */
+.card-img-top-250 {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+hr {
+  border: 1px dashed black;
+}
+
+.font_2 {
+  font: normal normal bold 60px/1.4em 'fredericka the great', fantasy;
+  padding: 20px;
+  color: #000000;
+}
+
+.font_5 {
+  font: normal normal normal 26px/1.4em 'fredericka the great', fantasy;
+  color: black;
+}
+
+.font_8 {
+  font: normal normal normal 15px/1.4em basic, sans-serif;
+  color: #000000;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #0f0f0f;
+  transform: scale(1.25);
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.cta {
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+.footer {
+  position: relative;
+  background-color: #000;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.fab.fa-twitter-square {
+  color: #55acee;
+}
+
+.fab.fa-facebook-square {
+  color: #3b5998;
+}
